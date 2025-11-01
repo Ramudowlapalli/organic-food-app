@@ -1,0 +1,83 @@
+.contact-section {
+  background-color: #f7fff7;
+}
+
+h1, h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 1.2s ease-in-out;
+}
+
+.animate-slideRight {
+  animation: slideRight 1.2s ease-in-out;
+}
+
+.hover-grow {
+  transition: all 0.3s ease;
+}
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Form Styling */
+.form-control {
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 5px rgba(25, 135, 84, 0.4);
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.hero-section {
+  position: relative;
+}
+
+.hero-slide {
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+  transition: transform 6s ease-in-out;
+}
+
+.carousel-item.active .hero-img {
+  transform: scale(1.05);
+}
+
+/* Default: text aligned to left */
+.text-container {
+  position: absolute;
+  left: 8%;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  max-width: 600px;
+  text-align: left;
+}
+
+/* --- Animations --- */
+.slide-up {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideUp 1s ease forwards;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: slideLeft 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Smooth button hover */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* --- Responsive alignment --- */
+@media (max-width: 992px) {
+  .text-container {
+    align-items: center;
+    text-align: center;
+    left: 0;
+    right: 0;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .btn-group-animated a {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-slide {
+    height: 70vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
+}

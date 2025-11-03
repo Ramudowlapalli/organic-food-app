@@ -19,32 +19,37 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* --- Quick Links --- */}
-          <div className="col-md-3 mb-4 mb-md-0">
-            <h5 className="border-bottom border-warning pb-2 d-inline-block mb-3">
-              Quick Links
-            </h5>
-            <ul className="list-unstyled small">
-              <li><a href="/home" className="text-light text-decoration-none">Home</a></li>
-              <li><a href="/services" className="text-light text-decoration-none">Shop</a></li>
-              <li><a href="/about" className="text-light text-decoration-none">About Us</a></li>
-              <li><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
-              <li><a href="/faq" className="text-light text-decoration-none">FAQ</a></li>
-            </ul>
-          </div>
+          {/* --- Quick Links & Categories (side by side on tablets and below) --- */}
+          <div className="col-md-6 mb-4 mb-md-0">
+            <div className="row">
+              {/* Quick Links */}
+              <div className="col-6 mb-4 mb-md-0">
+                <h5 className="border-bottom border-warning pb-2 d-inline-block mb-3">
+                  Quick Links
+                </h5>
+                <ul className="list-unstyled small">
+                  <li><a href="/home" className="text-light text-decoration-none">Home</a></li>
+                  <li><a href="/services" className="text-light text-decoration-none">Shop</a></li>
+                  <li><a href="/about" className="text-light text-decoration-none">About Us</a></li>
+                  <li><a href="/contact" className="text-light text-decoration-none">Contact</a></li>
+                  <li><a href="/faq" className="text-light text-decoration-none">FAQ</a></li>
+                </ul>
+              </div>
 
-          {/* --- Categories --- */}
-          <div className="col-md-3 mb-4 mb-md-0">
-            <h5 className="border-bottom border-warning pb-2 d-inline-block mb-3">
-              Categories
-            </h5>
-            <ul className="list-unstyled small">
-              <li><a href="#/" className="text-light text-decoration-none">Vegetables</a></li>
-              <li><a href="#/" className="text-light text-decoration-none">Fruits</a></li>
-              <li><a href="#/" className="text-light text-decoration-none">Grains</a></li>
-              <li><a href="#/" className="text-light text-decoration-none">Protein Foods</a></li>
-              <li><a href="#/" className="text-light text-decoration-none">Natural Oils</a></li>
-            </ul>
+              {/* Categories */}
+              <div className="col-6 mb-4 mb-md-0">
+                <h5 className="border-bottom border-warning pb-2 d-inline-block mb-3">
+                  Categories
+                </h5>
+                <ul className="list-unstyled small">
+                  <li><a href="#/" className="text-light text-decoration-none">Vegetables</a></li>
+                  <li><a href="#/" className="text-light text-decoration-none">Fruits</a></li>
+                  <li><a href="#/" className="text-light text-decoration-none">Grains</a></li>
+                  <li><a href="#/" className="text-light text-decoration-none">Protein Foods</a></li>
+                  <li><a href="#/" className="text-light text-decoration-none">Natural Oils</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* --- Stay Connected --- */}

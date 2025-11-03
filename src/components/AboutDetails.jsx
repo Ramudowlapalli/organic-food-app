@@ -12,7 +12,7 @@ const AboutDetails = () => {
           <Col lg={6}>
             <div className="position-relative overflow-hidden p-5 pe-0">
               <img
-                src="about img.jpg"
+                src="./images/about img.jpg"
                 alt="About NaturaX"
                 className="img-fluid w-100 rounded-4 shadow"
               />

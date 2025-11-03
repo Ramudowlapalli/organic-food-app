@@ -43,7 +43,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6">
             <div className="card border-0 shadow-sm rounded-4 h-100">
               <img
-                src="/Organic Farm Visits.jpg"
+                src="./images/Organic Farm Visits.jpg"
                 className="card-img-top rounded-top-4"
                 alt="Farm Visit"
                 style={{ height: "240px", objectFit: "cover" }}
@@ -78,7 +78,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6">
             <div className="card border-0 shadow-sm rounded-4 h-100">
               <img
-                src="/OrganicConsultation.jpg"
+                src="./images/OrganicConsultation.jpg"
                 className="card-img-top rounded-top-4"
                 alt="Consultation"
                 style={{ height: "240px", objectFit: "cover" }}
@@ -117,7 +117,7 @@ const Services = () => {
           <div className="col-lg-4 col-md-6">
             <div className="card border-0 shadow-sm rounded-4 h-100">
               <img
-                src="/OrganicSupply.jpg"
+                src="./images/OrganicSupply.jpg"
                 className="card-img-top rounded-top-4"
                 alt="Organic Supply"
                 style={{ height: "240px", objectFit: "cover" }}

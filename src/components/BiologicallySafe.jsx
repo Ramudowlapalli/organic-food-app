@@ -9,7 +9,7 @@ const BiologicallySafe = () => {
           {/* --- Left Side Image --- */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
-              src="/BiologicallySafeMain.jpg"
+              src="./images/BiologicallySafeMain.jpg"
               alt="Biologically Safe"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{ height: "100%", objectFit: "cover" }}
@@ -36,7 +36,7 @@ const BiologicallySafe = () => {
               {/* Card 1 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/labTested.jpg"
+                  src="./images/labTested.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Lab Tested"
                 />
@@ -54,7 +54,7 @@ const BiologicallySafe = () => {
               {/* Card 2 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/ecoFriendly.jpg"
+                  src="./images/ecoFriendly.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Eco Friendly Methods"
                 />
@@ -72,7 +72,7 @@ const BiologicallySafe = () => {
               {/* Card 3 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/familyHealth.jpg"
+                  src="./images/familyHealth.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Family Health"
                 />

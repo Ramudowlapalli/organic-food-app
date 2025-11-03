@@ -18,7 +18,7 @@ const Hero = () => {
               <div className="about-img position-relative overflow-hidden p-5 pe-0">
                 <img
                   className="img-fluid w-100 rounded-4 shadow"
-                  src="about img.jpg"
+                  src="./images/about img.jpg"
                   alt="About Us"
                 />
               </div>
@@ -67,7 +67,7 @@ const Hero = () => {
               <div className="bg-white text-center border border-success-subtle rounded-4 shadow-sm p-5 feature-card">
                 <img
                   className="img-fluid mb-1"
-                  src="/Natural Process.png"
+                  src="./images/Natural Process.png"
                   alt="Natural Process"
                   style={{ width: "80px" }}
                 />
@@ -90,7 +90,7 @@ const Hero = () => {
               <div className="bg-white text-center border border-success-subtle rounded-4 shadow-sm p-5 feature-card">
                 <img
                   className="img-fluid mb-4"
-                  src="/Organic Products.png"
+                  src="./images/Organic Products.png"
                   alt="Organic Products"
                   style={{ width: "80px" }}
                 />
@@ -113,7 +113,7 @@ const Hero = () => {
               <div className="bg-white text-center border border-success-subtle rounded-4 shadow-sm p-5 feature-card">
                 <img
                   className="img-fluid mb-4"
-                  src="/Biologically Safe.png"
+                  src="./images/Biologically Safe.png"
                   alt="Biologically Safe"
                   style={{ width: "80px" }}
                 />

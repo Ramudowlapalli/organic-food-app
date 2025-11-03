@@ -7,7 +7,7 @@ import {
   Button,
   NavDropdown,
 } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { FaLeaf } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
@@ -15,16 +15,28 @@ import "./Navbar.css";
 const MyNavbar = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleSearch = (e) => {
     e.preventDefault();
+    const trimmed = searchTerm.trim().toLowerCase();
 
-    if (searchTerm.trim() === "") {
+    if (!trimmed) {
       alert("Please enter a product or category to search.");
       return;
     }
 
-    navigate(`/products?search=${encodeURIComponent(searchTerm.toLowerCase())}`);
+    // 🧠 If already on /products, dispatch event instead of navigating
+    if (location.pathname === "/products") {
+      window.dispatchEvent(
+        new CustomEvent("navbar-search", { detail: trimmed })
+      );
+    } else {
+      // 🧭 Navigate to Products page with query param
+      navigate(`/products?search=${encodeURIComponent(trimmed)}`);
+    }
+
+    setSearchTerm("");
   };
 
   return (
@@ -44,35 +56,13 @@ const MyNavbar = () => {
           <span className="brand-name fs-4">NaturaX</span>
         </Navbar.Brand>
 
-        {/* --- Mobile Toggle --- */}
-        <Navbar.Toggle
-          aria-controls="navbar-nav"
-          className="bg-light border-0"
-        />
+        <Navbar.Toggle aria-controls="navbar-nav" className="bg-light border-0" />
 
         <Navbar.Collapse id="navbar-nav" className="mt-3 mt-lg-0">
-          {/* --- Navigation Links --- */}
           <Nav className="mx-auto text-center gap-2 gap-lg-4">
-            <Nav.Link
-              href="/home"
-              className="text-light fw-semibold nav-link-hover"
-            >
-              Home
-            </Nav.Link>
-            <Nav.Link
-              href="/about"
-              className="text-light fw-semibold nav-link-hover"
-            >
-              About Us
-            </Nav.Link>
-            <Nav.Link
-              href="/products"
-              className="text-light fw-semibold nav-link-hover"
-            >
-              Products
-            </Nav.Link>
-
-            {/* --- Dropdown Menu --- */}
+            <Nav.Link href="/home" className="text-light fw-semibold nav-link-hover">Home</Nav.Link>
+            <Nav.Link href="/about" className="text-light fw-semibold nav-link-hover">About Us</Nav.Link>
+            <Nav.Link href="/products" className="text-light fw-semibold nav-link-hover">Products</Nav.Link>
             <NavDropdown
               title={<span className="text-light fw-semibold">Pages</span>}
               id="pages-dropdown"
@@ -82,13 +72,7 @@ const MyNavbar = () => {
               <NavDropdown.Item href="/blogs">Blogs</NavDropdown.Item>
               <NavDropdown.Item href="/services">Services</NavDropdown.Item>
             </NavDropdown>
-
-            <Nav.Link
-              href="/contact"
-              className="text-light fw-semibold nav-link-hover"
-            >
-              Contact
-            </Nav.Link>
+            <Nav.Link href="/contact" className="text-light fw-semibold nav-link-hover">Contact</Nav.Link>
           </Nav>
 
           {/* --- Search Form --- */}

@@ -37,7 +37,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/Organic Farming.jpg"
+                src="./images/Organic Farming.jpg"
                 alt="Organic Farming"
                 style={{ height: "240px", objectFit: "cover" }}
               />
@@ -70,7 +70,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/Healthy Organic Food.jpg"
+                src="./images/Healthy Organic Food.jpg"
                 alt="Healthy Organic Food"
                 style={{ height: "240px", objectFit: "cover" }}
               />
@@ -103,7 +103,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/Organic Superfoods.jpg"
+                src="./images/Organic Superfoods.jpg"
                 alt="Organic Superfoods"
                 style={{ height: "240px", objectFit: "cover" }}
               />
@@ -136,7 +136,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/organic dairy products.jpg"
+                src="./images/organic dairy products.jpg"
                 alt="Organic Dairy Products"
                 style={{ height: "240px", objectFit: "cover" }}
               />
@@ -169,7 +169,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/Organic Market.jpg"
+                src="./images/Organic Market.jpg"
                 alt="Organic Market"
                 style={{ height: "240px", objectFit: "cover" }}
               />
@@ -202,7 +202,7 @@ const BlogSection = () => {
             <div className="card border-0 shadow-sm rounded-4 w-100">
               <img
                 className="card-img-top rounded-top-4"
-                src="/Sustainable Farming.jpg"
+                src="./images/Sustainable Farming.jpg"
                 alt="Sustainable Farming"
                 style={{ height: "240px", objectFit: "cover" }}
               />

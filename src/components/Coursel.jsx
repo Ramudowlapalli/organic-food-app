@@ -6,7 +6,7 @@ const Coursel = () => {
 
   const slides = [
     {
-      img: "/carousel-3.jpg",
+      img: "./images/carousel-3.jpg",
       title: (
         <>
           Organic Food Is Good For <span className="text-warning">Health</span>
@@ -14,7 +14,7 @@ const Coursel = () => {
       ),
     },
     {
-      img: "/carousel-2.jpg",
+      img: "./images/carousel-2.jpg",
       title: (
         <>
           Natural Food Is Always <span className="text-warning">Healthy</span>
@@ -22,7 +22,7 @@ const Coursel = () => {
       ),
     },
     {
-      img: "/carousel-1.jpg",
+      img: "./images/carousel-1.jpg",
       title: (
         <>
           Eat <span className="text-warning">Healthy</span> Live Healthy
@@ -47,10 +47,7 @@ const Coursel = () => {
         data-bs-interval="4000"
       >
         {/* --- Indicators --- */}
-        <div
-          className="carousel-indicators mb-3"
-          style={{ bottom: "15px" }}
-        >
+        <div className="carousel-indicators mb-3" style={{ bottom: "15px" }}>
           {slides.map((_, index) => (
             <button
               key={index}
@@ -85,7 +82,7 @@ const Coursel = () => {
                 className="d-block w-100"
                 alt={`Slide ${index + 1}`}
                 style={{
-                  height: "80vh",
+                  height: "90vh", 
                   objectFit: "cover",
                   filter: "brightness(75%)",
                 }}
@@ -153,7 +150,7 @@ const Coursel = () => {
       <style jsx>{`
         @media (max-width: 992px) {
           .carousel-item img {
-            height: 60vh !important;
+            height: 70vh !important; /* Increased from 60vh */
           }
           .carousel-caption h1 {
             font-size: 2.2rem !important;
@@ -162,7 +159,7 @@ const Coursel = () => {
 
         @media (max-width: 768px) {
           .carousel-item img {
-            height: 50vh !important;
+            height: 60vh !important; /* Increased from 50vh */
           }
           .carousel-caption h1 {
             font-size: 1.8rem !important;
@@ -174,7 +171,7 @@ const Coursel = () => {
 
         @media (max-width: 576px) {
           .carousel-item img {
-            height: 45vh !important;
+            height: 50vh !important; /* Increased from 45vh */
           }
           .carousel-caption h1 {
             font-size: 1.4rem !important;

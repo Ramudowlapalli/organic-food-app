@@ -27,7 +27,7 @@ const OrganicProducts = () => {
               {/* Card 1 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/freshHarvest.jpg"
+                  src="./images/freshHarvest.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Fresh Harvest"
                 />
@@ -45,7 +45,7 @@ const OrganicProducts = () => {
               {/* Card 2 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/gmoFree.jpg"
+                  src="./images/gmoFree.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="GMO-Free"
                 />
@@ -63,7 +63,7 @@ const OrganicProducts = () => {
               {/* Card 3 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/purePackaging.jpg"
+                  src="./images/purePackaging.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Eco Packaging"
                 />
@@ -83,7 +83,7 @@ const OrganicProducts = () => {
           {/* --- Right Side Image --- */}
           <div className="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
             <img
-              src="/OrganicProductsMain.jpg"
+              src="./images/OrganicProductsMain.jpg"
               alt="Organic Products"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{ height: "100%", objectFit: "cover" }}

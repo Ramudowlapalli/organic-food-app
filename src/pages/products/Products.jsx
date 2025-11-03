@@ -14,6 +14,19 @@ const Products = () => {
   const [searchTerm, setSearchTerm] = useState(searchTermFromURL);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
+  // 🧠 Listen for Navbar searches when already on /products
+  useEffect(() => {
+    const handleNavbarSearch = (e) => {
+      const term = e.detail;
+      setSearchTerm(term);
+      navigate(`/products?search=${encodeURIComponent(term)}`);
+    };
+
+    window.addEventListener("navbar-search", handleNavbarSearch);
+    return () =>
+      window.removeEventListener("navbar-search", handleNavbarSearch);
+  }, [navigate]);
+
   // 🔎 Update products whenever search or category changes
   useEffect(() => {
     let results = [];

@@ -9,7 +9,7 @@ const NaturalProcess = () => {
           {/* --- Left Side Image --- */}
           <div className="col-lg-6 mb-4 mb-lg-0">
             <img
-              src="/Naturall Process.jpg"
+              src="./images/naturall Process.jpg"
               alt="Natural Process"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{ height: "100%", objectFit: "cover" }}
@@ -36,7 +36,7 @@ const NaturalProcess = () => {
               {/* Card 1 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/Eco Farming.jpg"
+                  src="./images/Eco Farming.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Eco Farming"
                 />
@@ -54,7 +54,7 @@ const NaturalProcess = () => {
               {/* Card 2 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/Chemical-Free Growth.jpg"
+                  src="./images/Chemical-Free Growth.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Chemical Free Growth"
                 />
@@ -72,7 +72,7 @@ const NaturalProcess = () => {
               {/* Card 3 */}
               <Card className="flex-row border-0 shadow-sm rounded-4 overflow-hidden">
                 <Card.Img
-                  src="/Sustainable Harvest.jpg"
+                  src="./images/Sustainable Harvest.jpg"
                   style={{ width: "180px", objectFit: "cover" }}
                   alt="Sustainable Harvest"
                 />

@@ -6,18 +6,22 @@ const About = () => {
     <div className="about-page">
       {/* Hero Section */}
       <section
-        className="py-5 text-white text-center d-flex align-items-center justify-content-center"
+        className="text-white text-center d-flex flex-column align-items-center justify-content-center"
         style={{
           background:
             "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/About NaturaX.jpg') center/cover",
-          minHeight: "60vh",
+          minHeight: "80vh", // ⬆️ Increased height
+          padding: "60px 20px",
         }}
       >
         <div className="container">
-          <h1 className="display-5 fw-bold mb-3">
+          <h1 className="display-4 fw-bold mb-3">
             About <span className="text-success">NaturaX</span>
           </h1>
-          <p className="lead text-light mx-auto" style={{ maxWidth: "700px" }}>
+          <p
+            className="lead text-light mx-auto"
+            style={{ maxWidth: "700px", textAlign: "center" }} // ⬅️ Center text explicitly
+          >
             “Nourishing lives through pure, protein-rich, and organic food.”
           </p>
         </div>
@@ -28,21 +32,27 @@ const About = () => {
         <div className="row align-items-center g-4">
           <div className="col-12 col-lg-6 text-center text-lg-start">
             <img
-              src="/Our Story.jpg"
+              src="./images/Our Story.jpg"
               alt="Our Story"
               className="img-fluid rounded-4 shadow-lg w-100"
+              style={{
+                height: "400px", // ⬆️ Increased image height
+                objectFit: "cover",
+              }}
             />
           </div>
           <div className="col-12 col-lg-6">
-            <h2 className="fw-bold text-success mb-3">Our Story</h2>
-            <p className="text-muted mb-3 fs-6 fs-md-5">
+            <h2 className="fw-bold text-success mb-3 text-center text-lg-start">
+              Our Story
+            </h2>
+            <p className="text-muted mb-3 fs-6 fs-md-5 text-center text-lg-start">
               At <strong>NaturaX</strong>, we believe that health starts from
               the soil. What began as a small effort to promote organic farming
               has grown into a trusted name in natural nutrition. Our founders,
               inspired by ancient Indian wellness traditions and modern science,
               wanted to redefine how people eat, live, and feel.
             </p>
-            <p className="text-muted fs-6 fs-md-5">
+            <p className="text-muted fs-6 fs-md-5 text-center text-lg-start">
               Every product we offer is grown responsibly, sourced ethically,
               and packed with natural nutrients to support your health goals.
             </p>
@@ -51,8 +61,8 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-light py-5">
-        <div className="container text-center">
+      <section className="bg-light py-5 text-center">
+        <div className="container">
           <h2 className="fw-bold text-success mb-4">Our Mission & Vision</h2>
           <p
             className="text-muted mx-auto"
@@ -103,18 +113,24 @@ const About = () => {
         <div className="row align-items-center g-4">
           <div className="col-12 col-lg-6 order-lg-2 text-center">
             <img
-              src="/Quality You Can Trust.jpg"
+              src="./images/Quality You Can Trust.jpg"
               alt="Quality Assurance"
               className="img-fluid rounded-4 shadow-lg w-100"
+              style={{
+                height: "400px", // ⬆️ Increased height
+                objectFit: "cover",
+              }}
             />
           </div>
           <div className="col-12 col-lg-6 order-lg-1">
-            <h2 className="fw-bold text-success mb-3">Quality You Can Trust</h2>
-            <p className="text-muted mb-3 fs-6 fs-md-5">
+            <h2 className="fw-bold text-success mb-3 text-center text-lg-start">
+              Quality You Can Trust
+            </h2>
+            <p className="text-muted mb-3 fs-6 fs-md-5 text-center text-lg-start">
               Each product undergoes a strict quality verification process to
               ensure it meets the highest standards of purity and freshness.
             </p>
-            <ul className="list-unstyled text-muted fs-6">
+            <ul className="list-unstyled text-muted fs-6 text-center text-lg-start">
               <li>
                 <i className="fa fa-check text-success me-2"></i>No pesticides
                 or chemicals
@@ -154,10 +170,13 @@ const About = () => {
           <div className="row justify-content-center mt-4">
             <div className="col-12 col-md-10 col-lg-8">
               <img
-                src="/Committed to Sustainability.jpg"
+                src="./images/Committed to Sustainability.jpg"
                 alt="Sustainability"
                 className="img-fluid rounded-4 shadow-lg w-100"
-                style={{ objectFit: "cover" }}
+                style={{
+                  height: "400px", // ⬆️ Increased height
+                  objectFit: "cover",
+                }}
               />
             </div>
           </div>

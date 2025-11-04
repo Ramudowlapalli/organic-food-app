@@ -9,7 +9,7 @@ const About = () => {
         className="text-white text-center d-flex flex-column align-items-center justify-content-center"
         style={{
           background:
-            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/About NaturaX.jpg') center/cover",
+            "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/About NaturaX.jpg') center/cover",
           minHeight: "80vh", // ⬆️ Increased height
           padding: "60px 20px",
         }}

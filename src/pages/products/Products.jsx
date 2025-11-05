@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { products } from "../../assets/assets";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
+
 
 const Products = () => {
   const location = useLocation();
@@ -135,7 +138,7 @@ const Products = () => {
               <div className="col-xl-3 col-lg-4 col-md-6" key={product.id}>
                 <div className="card border-0 shadow-sm rounded-4 h-100">
                   <div className="position-relative overflow-hidden rounded-top">
-                    <img
+                    <LazyLoadImage
                       src={product.img}
                       alt={product.name}
                       className="img-fluid w-100"

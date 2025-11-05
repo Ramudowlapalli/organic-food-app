@@ -13,6 +13,7 @@ const AboutDetails = () => {
             <div className="position-relative overflow-hidden p-5 pe-0">
               <img
                 src="./images/about img.jpg"
+                loading="lazy"
                 alt="About NaturaX"
                 className="img-fluid w-100 rounded-4 shadow"
               />

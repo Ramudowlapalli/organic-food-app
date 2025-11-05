@@ -7,6 +7,7 @@ const Coursel = () => {
   const slides = [
     {
       img: "./images/carousel-3.jpg",
+      loading: "lazy",
       title: (
         <>
           Organic Food Is Good For <span className="text-warning">Health</span>
@@ -15,6 +16,7 @@ const Coursel = () => {
     },
     {
       img: "./images/carousel-2.jpg",
+      loading: "lazy",
       title: (
         <>
           Natural Food Is Always <span className="text-warning">Healthy</span>
@@ -23,6 +25,7 @@ const Coursel = () => {
     },
     {
       img: "./images/carousel-1.jpg",
+      loading: "lazy",
       title: (
         <>
           Eat <span className="text-warning">Healthy</span> Live Healthy

@@ -6,9 +6,9 @@ const ProductsOverview = () => {
   const navigate = useNavigate();
 
   const sampleProducts = [
-    { id: 1, name: "Fresh Tomato", price: "₹40", oldPrice: "₹55", img: "./images/Fresh Tomato.jpg" },
-    { id: 2, name: "Organic Broccoli", price: "₹50", oldPrice: "₹70", img: "./images/Organic Broccoli.jpg" },
-    { id: 3, name: "Crisp Spinach", price: "₹35", oldPrice: "₹50", img: "./images/Crisp Spinach.jpg" },
+    { id: 1, name: "Fresh Tomato", price: "₹40", oldPrice: "₹55", img: "./images/Fresh Tomato.jpg", loading: "lazy" },
+    { id: 2, name: "Organic Broccoli", price: "₹50", oldPrice: "₹70", img: "./images/Organic Broccoli.jpg", loading: "lazy" },
+    { id: 3, name: "Crisp Spinach", price: "₹35", oldPrice: "₹50", img: "./images/Crisp Spinach.jpg", loading: "lazy" },
   ];
 
   return (

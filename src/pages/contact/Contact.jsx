@@ -32,7 +32,8 @@ const Contact = () => {
           {/* --- Left Side Image --- */}
           <div className="col-lg-5 col-md-6">
             <img
-              src="/contactImage.jpg"
+              src="./images/contactImage.jpg"
+              loading="lazy"
               alt="Contact Organic"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{ objectFit: "cover", height: "100%" }}

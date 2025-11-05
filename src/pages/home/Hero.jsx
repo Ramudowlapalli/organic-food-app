@@ -19,6 +19,7 @@ const Hero = () => {
                 <img
                   className="img-fluid w-100 rounded-4 shadow"
                   src="./images/about img.jpg"
+                  loading="lazy"
                   alt="About Us"
                 />
               </div>
@@ -68,6 +69,7 @@ const Hero = () => {
                 <img
                   className="img-fluid mb-1"
                   src="./images/Natural Process.png"
+                  loading="lazy"
                   alt="Natural Process"
                   style={{ width: "80px" }}
                 />
@@ -91,6 +93,7 @@ const Hero = () => {
                 <img
                   className="img-fluid mb-4"
                   src="./images/Organic Products.png"
+                  loading="lazy"
                   alt="Organic Products"
                   style={{ width: "80px" }}
                 />
@@ -114,6 +117,7 @@ const Hero = () => {
                 <img
                   className="img-fluid mb-4"
                   src="./images/Biologically Safe.png"
+                  loading="lazy"
                   alt="Biologically Safe"
                   style={{ width: "80px" }}
                 />

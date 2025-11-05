@@ -38,6 +38,7 @@ const BlogSection = () => {
               <img
                 className="card-img-top rounded-top-4"
                 src="./images/Organic Farming.jpg"
+                loading="lazy"
                 alt="Organic Farming"
                 style={{
                   height: "240px",
@@ -74,6 +75,7 @@ const BlogSection = () => {
               <img
                 className="card-img-top rounded-top-4"
                 src="./images/Healthy Organic Food.jpg"
+                loading="lazy"
                 alt="Healthy Organic Food"
                 style={{
                   height: "240px",
@@ -110,6 +112,7 @@ const BlogSection = () => {
               <img
                 className="card-img-top rounded-top-4"
                 src="./images/Organic Superfoods.jpg"
+                loading="lazy"
                 alt="Organic Superfoods"
                 style={{
                   height: "240px",

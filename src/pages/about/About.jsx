@@ -33,6 +33,7 @@ const About = () => {
           <div className="col-12 col-lg-6 text-center text-lg-start">
             <img
               src="./images/Our Story.jpg"
+              loading="lazy"
               alt="Our Story"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{
@@ -114,6 +115,7 @@ const About = () => {
           <div className="col-12 col-lg-6 order-lg-2 text-center">
             <img
               src="./images/Quality You Can Trust.jpg"
+              loading="lazy"
               alt="Quality Assurance"
               className="img-fluid rounded-4 shadow-lg w-100"
               style={{
@@ -171,6 +173,7 @@ const About = () => {
             <div className="col-12 col-md-10 col-lg-8">
               <img
                 src="./images/Committed to Sustainability.jpg"
+                loading="lazy"
                 alt="Sustainability"
                 className="img-fluid rounded-4 shadow-lg w-100"
                 style={{
